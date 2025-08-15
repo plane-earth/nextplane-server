@@ -11,7 +11,7 @@
 
 **A safe home for all your data.**
 
-![](https://raw.githubusercontent.com/nextcloud/screenshots/master/nextcloud-hub-files-25-preview.png)
+![](nextplane.jpg)
 
 ## Why is this so awesome? 🤩
 
