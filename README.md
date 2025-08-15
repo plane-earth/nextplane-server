@@ -3,13 +3,13 @@
  - SPDX-FileCopyrightText: 2013-2016 ownCloud, Inc.
  - SPDX-License-Identifier: AGPL-3.0-or-later
 -->
-# Nextcloud Server ☁
+# Nextplane Server ☁
 [![REUSE status](https://api.reuse.software/badge/github.com/nextcloud/server)](https://api.reuse.software/info/github.com/nextcloud/server)
 [![codecov](https://codecov.io/gh/nextcloud/server/branch/master/graph/badge.svg)](https://codecov.io/gh/nextcloud/server)
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/209/badge)](https://bestpractices.coreinfrastructure.org/projects/209)
 [![Design](https://contribute.design/api/shield/nextcloud/server)](https://contribute.design/nextcloud/server)
 
-**A safe home for all your data.**
+**A plane for all your data.**
 
 ![](nextplane.jpg)
 
