@@ -192,6 +192,7 @@
     "Second Last" : "Azken aurrekoa",
     "Third Last" : "Hirugarren azkena",
     "Fourth Last" : "Laugarren azkena",
+    "Fifth Last" : "Bosgarren azkena",
     "Contacts" : "Kontaktuak",
     "{actor} created address book {addressbook}" : "{actor}-(e)k {addressbook} helbide-liburua sortu du ",
     "You created address book {addressbook}" : "{addressbook} helbide-liburua sortu duzu",
@@ -280,7 +281,6 @@
     "Failed to load availability" : "Ezin izan da eskuragarritasuna kargatu",
     "Saved availability" : "Eskuragarritasuna gorde da",
     "Failed to save availability" : "Ezin izan da eskuragarritasuna gorde",
-    "Time zone:" : "Ordu-zona:",
     "to" : "honi",
     "Delete slot" : "Ezabatu tartea",
     "No working hours set" : "Ez dira laneko orduak ezarri",
@@ -330,6 +330,7 @@
     "Please contact the organizer directly." : "Mesedez jarri harremanetan antolatzailearekin zuzenean.",
     "Are you accepting the invitation?" : "Gonbidapena onartzen duzu?",
     "Tentative" : "Behin behinekoa",
-    "Your attendance was updated successfully." : "Zure parte-hartzea ondo eguneratu da."
+    "Your attendance was updated successfully." : "Zure parte-hartzea ondo eguneratu da.",
+    "Time zone:" : "Ordu-zona:"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

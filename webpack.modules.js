@@ -42,7 +42,8 @@ module.exports = {
 		main: path.join(__dirname, 'apps/files/src', 'main.ts'),
 		init: path.join(__dirname, 'apps/files/src', 'init.ts'),
 		search: path.join(__dirname, 'apps/files/src/plugins/search', 'folderSearch.ts'),
-		'settings-personal': path.join(__dirname, 'apps/files/src', 'main-personal-settings.js'),
+		'settings-admin': path.join(__dirname, 'apps/files/src', 'main-settings-admin.ts'),
+		'settings-personal': path.join(__dirname, 'apps/files/src', 'main-settings-personal.ts'),
 		'reference-files': path.join(__dirname, 'apps/files/src', 'reference-files.ts'),
 	},
 	files_external: {
@@ -82,10 +83,12 @@ module.exports = {
 	settings: {
 		apps: path.join(__dirname, 'apps/settings/src', 'apps.js'),
 		'legacy-admin': path.join(__dirname, 'apps/settings/src', 'admin.js'),
+		'vue-settings-admin-overview': path.join(__dirname, 'apps/settings/src', 'main-admin-overview.ts'),
 		'vue-settings-admin-basic-settings': path.join(__dirname, 'apps/settings/src', 'main-admin-basic-settings.js'),
 		'vue-settings-admin-ai': path.join(__dirname, 'apps/settings/src', 'main-admin-ai.js'),
 		'vue-settings-admin-delegation': path.join(__dirname, 'apps/settings/src', 'main-admin-delegation.js'),
 		'vue-settings-admin-security': path.join(__dirname, 'apps/settings/src', 'main-admin-security.js'),
+		'vue-settings-admin-settings-presets': path.join(__dirname, 'apps/settings/src', 'main-admin-settings-presets.js'),
 		'vue-settings-admin-sharing': path.join(__dirname, 'apps/settings/src', 'admin-settings-sharing.ts'),
 		'vue-settings-apps-users-management': path.join(__dirname, 'apps/settings/src', 'main-apps-users-management.ts'),
 		'vue-settings-nextcloud-pdf': path.join(__dirname, 'apps/settings/src', 'main-nextcloud-pdf.js'),

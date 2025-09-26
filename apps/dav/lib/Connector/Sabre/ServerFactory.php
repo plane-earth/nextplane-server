@@ -28,6 +28,7 @@ use OCP\Files\IFilenameValidator;
 use OCP\Files\IRootFolder;
 use OCP\Files\Mount\IMountManager;
 use OCP\IConfig;
+use OCP\IDateTimeZone;
 use OCP\IDBConnection;
 use OCP\IGroupManager;
 use OCP\IL10N;
@@ -95,6 +96,8 @@ class ServerFactory {
 			$server->debugEnabled = $debugEnabled;
 			$server->addPlugin(new PropFindMonitorPlugin());
 		}
+
+		$server->addPlugin(new PropFindPreloadNotifyPlugin());
 		// FIXME: The following line is a workaround for legacy components relying on being able to send a GET to /
 		$server->addPlugin(new DummyGetResponsePlugin());
 		$server->addPlugin(new ExceptionLoggerPlugin('webdav', $this->logger));
@@ -106,6 +109,7 @@ class ServerFactory {
 			$tree,
 			$this->logger,
 			$this->eventDispatcher,
+			\OCP\Server::get(IDateTimeZone::class),
 		));
 
 		// Some WebDAV clients do require Class 2 WebDAV support (locking), since

@@ -86,9 +86,9 @@ export default {
 	}
 
 	&__icon {
-		flex-shrink: 0;
-		max-width: 34px;
-		max-height: 100%;
+		height: 20px;
+		width: 20px;
+		padding: calc((var(--default-clickable-area) - 20px) / 2);
 	}
 
 	&__input:checked + &__label {
@@ -104,7 +104,7 @@ export default {
 
 	&__subline {
 		display: block;
-		color: var(--color-text-lighter);
+		color: var(--color-text-maxcontrast);
 	}
 }
 </style>

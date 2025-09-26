@@ -1,5 +1,6 @@
 { "translations": {
     "Files" : "Ifuyla",
+    "Templates" : "Timudmiwin",
     "Apps" : "Isnasen",
     "Settings" : "Iɣewwaṛen",
     "Log out" : "Senser",
@@ -10,6 +11,13 @@
     "Website" : "Asmel web",
     "Address" : "Adresse",
     "About" : "Γef",
+    "Sunday" : "Acer",
+    "Monday" : "Arim",
+    "Tuesday" : "Aram",
+    "Wednesday" : "Ahad",
+    "Thursday" : "Amhad",
+    "Friday" : "Sem",
+    "Saturday" : "Sed",
     "Images" : "Tugniwin",
     "Question" : "Asteqsi",
     "Translate" : "Suqel"

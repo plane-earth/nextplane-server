@@ -46,6 +46,7 @@ use OC\Repair\OldGroupMembershipShares;
 use OC\Repair\Owncloud\CleanPreviews;
 use OC\Repair\Owncloud\DropAccountTermsTable;
 use OC\Repair\Owncloud\MigrateOauthTables;
+use OC\Repair\Owncloud\MigratePropertiesTable;
 use OC\Repair\Owncloud\MoveAvatars;
 use OC\Repair\Owncloud\SaveAccountsTableData;
 use OC\Repair\Owncloud\UpdateLanguageCodes;
@@ -57,6 +58,7 @@ use OC\Repair\RepairLogoDimension;
 use OC\Repair\RepairMimeTypes;
 use OC\Template\JSCombiner;
 use OCA\DAV\Migration\DeleteSchedulingObjects;
+use OCA\DAV\Migration\RemoveObjectProperties;
 use OCP\AppFramework\QueryException;
 use OCP\AppFramework\Utility\ITimeFactory;
 use OCP\Collaboration\Resources\IManager;
@@ -167,6 +169,7 @@ class Repair implements IOutput {
 				\OC::$server->getUserManager(),
 				\OC::$server->getConfig()
 			),
+			\OCP\Server::get(MigratePropertiesTable::class),
 			\OC::$server->get(MigrateOauthTables::class),
 			new UpdateLanguageCodes(\OC::$server->getDatabaseConnection(), \OC::$server->getConfig()),
 			new AddLogRotateJob(\OC::$server->getJobList()),
@@ -215,6 +218,7 @@ class Repair implements IOutput {
 				\OCP\Server::get(IDBConnection::class)
 			),
 			\OCP\Server::get(DeleteSchedulingObjects::class),
+			\OC::$server->get(RemoveObjectProperties::class),
 		];
 	}
 

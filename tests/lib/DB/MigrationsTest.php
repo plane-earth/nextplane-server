@@ -8,6 +8,7 @@
 
 namespace Test\DB;
 
+use Doctrine\DBAL\Platforms\OraclePlatform;
 use Doctrine\DBAL\Schema\Column;
 use Doctrine\DBAL\Schema\ForeignKeyConstraint;
 use Doctrine\DBAL\Schema\Index;
@@ -20,6 +21,7 @@ use OC\DB\Connection;
 use OC\DB\MigrationService;
 use OC\DB\SchemaWrapper;
 use OC\Migration\MetadataManager;
+use OCP\App\AppPathNotFoundException;
 use OCP\App\IAppManager;
 use OCP\IDBConnection;
 use OCP\Migration\Attributes\AddColumn;
@@ -33,6 +35,7 @@ use OCP\Migration\Attributes\IndexType;
 use OCP\Migration\Attributes\ModifyColumn;
 use OCP\Migration\IMigrationStep;
 use OCP\Server;
+use PHPUnit\Framework\Attributes\TestWith;
 use PHPUnit\Framework\MockObject\MockObject;
 
 /**
@@ -81,10 +84,10 @@ class MigrationsTest extends \Test\TestCase {
 
 
 	public function testUnknownApp(): void {
-		$this->expectException(\Exception::class);
-		$this->expectExceptionMessage('App not found');
+		$this->expectException(AppPathNotFoundException::class);
+		$this->expectExceptionMessage('Could not find path for unknown_bloody_app');
 
-		$migrationService = new MigrationService('unknown-bloody-app', $this->db);
+		$migrationService = new MigrationService('unknown_bloody_app', $this->db);
 	}
 
 
@@ -702,8 +705,11 @@ class MigrationsTest extends \Test\TestCase {
 	}
 
 
-	public function testEnsureOracleConstraintsBooleanNotNull(): void {
-		$this->expectException(\InvalidArgumentException::class);
+	#[TestWith([true])]
+	#[TestWith([false])]
+	public function testEnsureOracleConstraintsBooleanNotNull(bool $isOracle): void {
+		$this->db->method('getDatabasePlatform')
+			->willReturn($isOracle ? $this->createMock(OraclePlatform::class) : null);
 
 		$column = $this->createMock(Column::class);
 		$column->expects($this->any())
@@ -737,6 +743,15 @@ class MigrationsTest extends \Test\TestCase {
 		$sourceSchema->expects($this->any())
 			->method('hasSequence')
 			->willReturn(false);
+
+		if ($isOracle) {
+			$column->expects($this->once())
+				->method('setNotnull')
+				->with(false);
+		} else {
+			$column->expects($this->never())
+				->method('setNotnull');
+		}
 
 		self::invokePrivate($this->migrationService, 'ensureOracleConstraints', [$sourceSchema, $schema, 3]);
 	}

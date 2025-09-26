@@ -220,6 +220,8 @@ OC.L10N.register(
     "{actor} updated contact {card} in address book {addressbook}" : "{actor} 更新了通訊錄 {addressbook} 中的聯絡人 {card}",
     "You updated contact {card} in address book {addressbook}" : "您更新了通訊錄 {addressbook} 中的聯絡人 {card}",
     "A <strong>contact</strong> or <strong>address book</strong> was modified" : "聯絡人或通訊錄被修改",
+    "System address book disabled" : "系統通訊錄已停用",
+    "The system contacts address book has been automatically disabled during upgrade. This means that the address book will no longer be available to users in the contacts app or other clients. The system contacts address book was disabled because the amount of contacts in the address book exceeded the maximum recommended number of contacts. This limit is set to prevent performance issues. You can re-enable the system address book with the following command {command}" : "系統通訊錄在升級過程中已自動停用。這表示使用者將無法在通訊錄應用程式或其他客戶端存取該通訊錄。停用原因在於通訊錄中的聯絡人數量已超過建議上限，此限制旨在避免效能問題。您可透過以下指令重新啟用系統通訊錄：{command}",
     "Accounts" : "帳戶",
     "System address book which holds all accounts" : "包含所有帳戶的系統通訊錄",
     "File is not updatable: %1$s" : "檔案無法更新：%1$s",
@@ -258,6 +260,10 @@ OC.L10N.register(
     "DAV system address book" : "DAV 系統通訊錄",
     "No outstanding DAV system address book sync." : "沒有未完成的 DAV 系統通訊錄同步。",
     "The DAV system address book sync has not run yet as your instance has more than 1000 users or because an error occurred. Please run it manually by calling \"occ dav:sync-system-addressbook\"." : "DAV 系統通訊錄同步尚未執行，因為您的實例有超過 1000 個用戶，或是因為遇到錯誤。請透過 \"occ dav:sync-system-addressbook\" 手動執行。",
+    "DAV system address book size" : "DAV 系統通訊錄大小",
+    "The system address book is disabled" : "系統通訊錄已停用",
+    "The system address book is enabled, but contains more than the configured limit of %d contacts" : "系統通訊錄已啟用，但其中聯絡人數量超過設定 %d 個的上限。",
+    "The system address book is enabled and contains less than the configured limit of %d contacts" : "系統通訊錄已啟用，且其中聯絡人數量少於設定 %d 個的上限。",
     "WebDAV endpoint" : "WebDAV 端點",
     "Could not check that your web server is properly set up to allow file synchronization over WebDAV. Please check manually." : "無法檢查您的網頁伺服器是否正確設置以允許透過 WebDAV 進行檔案同步。請手動進行檢查。",
     "Your web server is not yet properly set up to allow file synchronization, because the WebDAV interface seems to be broken." : "WebDAV 界面似乎為故障狀態，導致您的網頁伺服器無法提供檔案同步功能。",
@@ -283,7 +289,6 @@ OC.L10N.register(
     "Failed to load availability" : "加載空閒時間失敗",
     "Saved availability" : "已保存空閒時間",
     "Failed to save availability" : "未能保存空閒時間",
-    "Time zone:" : "時區：",
     "to" : "至",
     "Delete slot" : "刪除欄位",
     "No working hours set" : "尚未設置工作時間",
@@ -333,6 +338,7 @@ OC.L10N.register(
     "Please contact the organizer directly." : "請直接聯繫絡主辦人",
     "Are you accepting the invitation?" : "接受邀請嗎？",
     "Tentative" : "暫定",
-    "Your attendance was updated successfully." : "您的參與狀況成功更新"
+    "Your attendance was updated successfully." : "您的參與狀況成功更新",
+    "Time zone:" : "時區："
 },
 "nplurals=1; plural=0;");

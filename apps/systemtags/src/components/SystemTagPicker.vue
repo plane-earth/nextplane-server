@@ -17,7 +17,7 @@
 			:name="t('systemtags', 'Applying tags changes…')">
 			<template #icon>
 				<NcLoadingIcon v-if="status === Status.LOADING" />
-				<CheckIcon v-else fill-color="var(--color-success)" />
+				<CheckIcon v-else fill-color="var(--color-border-success)" />
 			</template>
 		</NcEmptyContent>
 
@@ -51,7 +51,7 @@
 					<!-- Color picker -->
 					<NcColorPicker v-if="canEditOrCreateTag"
 						:data-cy-systemtags-picker-tag-color="tag.id"
-						:value="`#${tag.color}`"
+						:value="`#${tag.color || '000000'}`"
 						:shown="openedPicker === tag.id"
 						class="systemtags-picker__tag-color"
 						@update:value="onColorChange(tag, $event)"
@@ -619,7 +619,6 @@ export default defineComponent({
 				max-width: none;
 				// recalculate padding
 				box-sizing: border-box;
-				min-height: calc(var(--default-grid-baseline) * 2 + var(--default-clickable-area));
 			}
 		}
 	}

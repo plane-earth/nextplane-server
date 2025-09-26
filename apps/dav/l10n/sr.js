@@ -220,6 +220,8 @@ OC.L10N.register(
     "{actor} updated contact {card} in address book {addressbook}" : "{actor} је ажурирао контакт {card} у адресару {addressbook}",
     "You updated contact {card} in address book {addressbook}" : "Ажурирали сте контакт {card} у адресару {addressbook}",
     "A <strong>contact</strong> or <strong>address book</strong> was modified" : "Измењен је <strong>контакт</strong> или <strong>адресар</strong>",
+    "System address book disabled" : "Искључен је системски адресар",
+    "The system contacts address book has been automatically disabled during upgrade. This means that the address book will no longer be available to users in the contacts app or other clients. The system contacts address book was disabled because the amount of contacts in the address book exceeded the maximum recommended number of contacts. This limit is set to prevent performance issues. You can re-enable the system address book with the following command {command}" : "Адресар системских контаката је аутоматски искључен током ажурирања. Ово значи да корисници више неће моћи да користе адресар у апликацији контакти и у осталим клијентима. Системски адресар је искључен јер је број контаката у њему прешао препоручени максимални број контаката. Ово ограничење је постављено да би се спречили проблеми са перформансама. Следећом командом можете поново да укључите системски адресар {command}",
     "Accounts" : "Налози",
     "System address book which holds all accounts" : "Системски адресар у којем се налазе сви налози",
     "File is not updatable: %1$s" : "Фајл не може да се ажурира: %1$s",
@@ -258,6 +260,10 @@ OC.L10N.register(
     "DAV system address book" : "DAV системски адресар",
     "No outstanding DAV system address book sync." : "Не постоји ниједна синхронизација DAV системског адресара која треба да се обави.",
     "The DAV system address book sync has not run yet as your instance has more than 1000 users or because an error occurred. Please run it manually by calling \"occ dav:sync-system-addressbook\"." : "DAV синхронизација системског адресара се још увек није покренула јер ваша инстанца има више од 1000 корисника или јер је дошло до грешке. Молимо вас да га ручно покренете командом „occ dav:sync-system-addressbook”.",
+    "DAV system address book size" : "Величина DAV системског адресара",
+    "The system address book is disabled" : "Системски адресар је искључен",
+    "The system address book is enabled, but contains more than the configured limit of %d contacts" : "Системски адресар је укључен, али садржи више контаката од подешене границе %d контаката",
+    "The system address book is enabled and contains less than the configured limit of %d contacts" : "Системски адресар је укључен и садржи мање контаката од подешене границе %d контаката",
     "WebDAV endpoint" : "WebDAV крајња тачка",
     "Could not check that your web server is properly set up to allow file synchronization over WebDAV. Please check manually." : "Није могло да се провери да ли ваш веб сервер исправно подешен тако да се омогући синхронизација фајлова преко WebDAV. Молимо вас да проверите ручно.",
     "Your web server is not yet properly set up to allow file synchronization, because the WebDAV interface seems to be broken." : "Сервер није правилно подешен за синхронизацију фајлова. Изгледа да је ВебДАВ сучеље покварено.",
@@ -283,7 +289,6 @@ OC.L10N.register(
     "Failed to load availability" : "Доступност није могла да се учита",
     "Saved availability" : "Доступност је сачувана",
     "Failed to save availability" : "Није успело снимање доступности ",
-    "Time zone:" : "Временска зона:",
     "to" : "за",
     "Delete slot" : "Обриши прорез",
     "No working hours set" : "Нису подешени радни сати",
@@ -333,6 +338,7 @@ OC.L10N.register(
     "Please contact the organizer directly." : "Контактирајте директно организатора.",
     "Are you accepting the invitation?" : "Да ли прихватате позивницу?",
     "Tentative" : "Условна потврда",
-    "Your attendance was updated successfully." : "Ваше присуство је успешно ажурирано."
+    "Your attendance was updated successfully." : "Ваше присуство је успешно ажурирано.",
+    "Time zone:" : "Временска зона:"
 },
 "nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);");
