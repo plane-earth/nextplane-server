@@ -8511,7 +8511,7 @@
                     {
                         "name": "limit",
                         "in": "query",
-                        "description": "Maximum amount of entries, limited to 25",
+                        "description": "Maximum amount of entries (capped by configurable unified-search.max-results-per-request, default: 25)",
                         "schema": {
                             "type": "integer",
                             "format": "int64",
@@ -11788,6 +11788,10 @@
         }
     },
     "tags": [
+        {
+            "name": "ocs",
+            "description": "If you are here because you can't extend the OCSController class, you got the wrong one. Please use {@see \\OCP\\AppFramework\\OCSController}!"
+        },
         {
             "name": "avatar",
             "description": "Class AvatarController"

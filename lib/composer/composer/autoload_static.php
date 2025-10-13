@@ -11,32 +11,32 @@ class ComposerStaticInit749170dad3f5e7f9ca158f5a9f04f6a2
     );
 
     public static $prefixLengthsPsr4 = array (
-        'O' => 
+        'O' =>
         array (
             'OC\\Core\\' => 8,
             'OC\\' => 3,
             'OCP\\' => 4,
         ),
-        'N' => 
+        'N' =>
         array (
             'NCU\\' => 4,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'OC\\Core\\' => 
+        'OC\\Core\\' =>
         array (
             0 => __DIR__ . '/../../..' . '/core',
         ),
-        'OC\\' => 
+        'OC\\' =>
         array (
             0 => __DIR__ . '/../../..' . '/lib/private',
         ),
-        'OCP\\' => 
+        'OCP\\' =>
         array (
             0 => __DIR__ . '/../../..' . '/lib/public',
         ),
-        'NCU\\' => 
+        'NCU\\' =>
         array (
             0 => __DIR__ . '/../../..' . '/lib/unstable',
         ),
@@ -761,7 +761,6 @@ class ComposerStaticInit749170dad3f5e7f9ca158f5a9f04f6a2
         'OCP\\PreConditionNotMetException' => __DIR__ . '/../../..' . '/lib/public/PreConditionNotMetException.php',
         'OCP\\Preview\\BeforePreviewFetchedEvent' => __DIR__ . '/../../..' . '/lib/public/Preview/BeforePreviewFetchedEvent.php',
         'OCP\\Preview\\IMimeIconProvider' => __DIR__ . '/../../..' . '/lib/public/Preview/IMimeIconProvider.php',
-        'OCP\\Preview\\IProvider' => __DIR__ . '/../../..' . '/lib/public/Preview/IProvider.php',
         'OCP\\Preview\\IProviderV2' => __DIR__ . '/../../..' . '/lib/public/Preview/IProviderV2.php',
         'OCP\\Preview\\IVersionedPreviewFile' => __DIR__ . '/../../..' . '/lib/public/Preview/IVersionedPreviewFile.php',
         'OCP\\Profile\\BeforeTemplateRenderedEvent' => __DIR__ . '/../../..' . '/lib/public/Profile/BeforeTemplateRenderedEvent.php',
@@ -794,9 +793,6 @@ class ComposerStaticInit749170dad3f5e7f9ca158f5a9f04f6a2
         'OCP\\Search\\IInAppSearch' => __DIR__ . '/../../..' . '/lib/public/Search/IInAppSearch.php',
         'OCP\\Search\\IProvider' => __DIR__ . '/../../..' . '/lib/public/Search/IProvider.php',
         'OCP\\Search\\ISearchQuery' => __DIR__ . '/../../..' . '/lib/public/Search/ISearchQuery.php',
-        'OCP\\Search\\PagedProvider' => __DIR__ . '/../../..' . '/lib/public/Search/PagedProvider.php',
-        'OCP\\Search\\Provider' => __DIR__ . '/../../..' . '/lib/public/Search/Provider.php',
-        'OCP\\Search\\Result' => __DIR__ . '/../../..' . '/lib/public/Search/Result.php',
         'OCP\\Search\\SearchResult' => __DIR__ . '/../../..' . '/lib/public/Search/SearchResult.php',
         'OCP\\Search\\SearchResultEntry' => __DIR__ . '/../../..' . '/lib/public/Search/SearchResultEntry.php',
         'OCP\\Security\\Bruteforce\\IThrottler' => __DIR__ . '/../../..' . '/lib/public/Security/Bruteforce/IThrottler.php',
@@ -1022,6 +1018,7 @@ class ComposerStaticInit749170dad3f5e7f9ca158f5a9f04f6a2
         'OCP\\User\\Events\\PasswordUpdatedEvent' => __DIR__ . '/../../..' . '/lib/public/User/Events/PasswordUpdatedEvent.php',
         'OCP\\User\\Events\\PostLoginEvent' => __DIR__ . '/../../..' . '/lib/public/User/Events/PostLoginEvent.php',
         'OCP\\User\\Events\\UserChangedEvent' => __DIR__ . '/../../..' . '/lib/public/User/Events/UserChangedEvent.php',
+        'OCP\\User\\Events\\UserConfigChangedEvent' => __DIR__ . '/../../..' . '/lib/public/User/Events/UserConfigChangedEvent.php',
         'OCP\\User\\Events\\UserCreatedEvent' => __DIR__ . '/../../..' . '/lib/public/User/Events/UserCreatedEvent.php',
         'OCP\\User\\Events\\UserDeletedEvent' => __DIR__ . '/../../..' . '/lib/public/User/Events/UserDeletedEvent.php',
         'OCP\\User\\Events\\UserFirstTimeLoggedInEvent' => __DIR__ . '/../../..' . '/lib/public/User/Events/UserFirstTimeLoggedInEvent.php',
@@ -1293,6 +1290,7 @@ class ComposerStaticInit749170dad3f5e7f9ca158f5a9f04f6a2
         'OC\\Core\\BackgroundJobs\\CleanupLoginFlowV2' => __DIR__ . '/../../..' . '/core/BackgroundJobs/CleanupLoginFlowV2.php',
         'OC\\Core\\BackgroundJobs\\GenerateMetadataJob' => __DIR__ . '/../../..' . '/core/BackgroundJobs/GenerateMetadataJob.php',
         'OC\\Core\\BackgroundJobs\\LookupServerSendCheckBackgroundJob' => __DIR__ . '/../../..' . '/core/BackgroundJobs/LookupServerSendCheckBackgroundJob.php',
+        'OC\\Core\\BackgroundJobs\\MovePreviewJob' => __DIR__ . '/../../..' . '/core/BackgroundJobs/MovePreviewJob.php',
         'OC\\Core\\Command\\App\\Disable' => __DIR__ . '/../../..' . '/core/Command/App/Disable.php',
         'OC\\Core\\Command\\App\\Enable' => __DIR__ . '/../../..' . '/core/Command/App/Enable.php',
         'OC\\Core\\Command\\App\\GetPath' => __DIR__ . '/../../..' . '/core/Command/App/GetPath.php',
@@ -1383,7 +1381,6 @@ class ComposerStaticInit749170dad3f5e7f9ca158f5a9f04f6a2
         'OC\\Core\\Command\\Memcache\\RedisCommand' => __DIR__ . '/../../..' . '/core/Command/Memcache/RedisCommand.php',
         'OC\\Core\\Command\\Preview\\Cleanup' => __DIR__ . '/../../..' . '/core/Command/Preview/Cleanup.php',
         'OC\\Core\\Command\\Preview\\Generate' => __DIR__ . '/../../..' . '/core/Command/Preview/Generate.php',
-        'OC\\Core\\Command\\Preview\\Repair' => __DIR__ . '/../../..' . '/core/Command/Preview/Repair.php',
         'OC\\Core\\Command\\Preview\\ResetRenderedTexts' => __DIR__ . '/../../..' . '/core/Command/Preview/ResetRenderedTexts.php',
         'OC\\Core\\Command\\Router\\ListRoutes' => __DIR__ . '/../../..' . '/core/Command/Router/ListRoutes.php',
         'OC\\Core\\Command\\Router\\MatchRoute' => __DIR__ . '/../../..' . '/core/Command/Router/MatchRoute.php',
@@ -1568,8 +1565,10 @@ class ComposerStaticInit749170dad3f5e7f9ca158f5a9f04f6a2
         'OC\\Core\\Migrations\\Version32000Date20250620081925' => __DIR__ . '/../../..' . '/core/Migrations/Version32000Date20250620081925.php',
         'OC\\Core\\Migrations\\Version32000Date20250731062008' => __DIR__ . '/../../..' . '/core/Migrations/Version32000Date20250731062008.php',
         'OC\\Core\\Migrations\\Version32000Date20250806110519' => __DIR__ . '/../../..' . '/core/Migrations/Version32000Date20250806110519.php',
+        'OC\\Core\\Migrations\\Version33000Date20250819110529' => __DIR__ . '/../../..' . '/core/Migrations/Version33000Date20250819110529.php',
         'OC\\Core\\Notification\\CoreNotifier' => __DIR__ . '/../../..' . '/core/Notification/CoreNotifier.php',
         'OC\\Core\\ResponseDefinitions' => __DIR__ . '/../../..' . '/core/ResponseDefinitions.php',
+        'OC\\Core\\Service\\CronService' => __DIR__ . '/../../..' . '/core/Service/CronService.php',
         'OC\\Core\\Service\\LoginFlowV2Service' => __DIR__ . '/../../..' . '/core/Service/LoginFlowV2Service.php',
         'OC\\DB\\Adapter' => __DIR__ . '/../../..' . '/lib/private/DB/Adapter.php',
         'OC\\DB\\AdapterMySQL' => __DIR__ . '/../../..' . '/lib/private/DB/AdapterMySQL.php',
@@ -1725,7 +1724,6 @@ class ComposerStaticInit749170dad3f5e7f9ca158f5a9f04f6a2
         'OC\\Files\\Mount\\MountPoint' => __DIR__ . '/../../..' . '/lib/private/Files/Mount/MountPoint.php',
         'OC\\Files\\Mount\\MoveableMount' => __DIR__ . '/../../..' . '/lib/private/Files/Mount/MoveableMount.php',
         'OC\\Files\\Mount\\ObjectHomeMountProvider' => __DIR__ . '/../../..' . '/lib/private/Files/Mount/ObjectHomeMountProvider.php',
-        'OC\\Files\\Mount\\ObjectStorePreviewCacheMountProvider' => __DIR__ . '/../../..' . '/lib/private/Files/Mount/ObjectStorePreviewCacheMountProvider.php',
         'OC\\Files\\Mount\\RootMountProvider' => __DIR__ . '/../../..' . '/lib/private/Files/Mount/RootMountProvider.php',
         'OC\\Files\\Node\\File' => __DIR__ . '/../../..' . '/lib/private/Files/Node/File.php',
         'OC\\Files\\Node\\Folder' => __DIR__ . '/../../..' . '/lib/private/Files/Node/Folder.php',
@@ -1802,7 +1800,6 @@ class ComposerStaticInit749170dad3f5e7f9ca158f5a9f04f6a2
         'OC\\Files\\Template\\TemplateManager' => __DIR__ . '/../../..' . '/lib/private/Files/Template/TemplateManager.php',
         'OC\\Files\\Type\\Detection' => __DIR__ . '/../../..' . '/lib/private/Files/Type/Detection.php',
         'OC\\Files\\Type\\Loader' => __DIR__ . '/../../..' . '/lib/private/Files/Type/Loader.php',
-        'OC\\Files\\Type\\TemplateManager' => __DIR__ . '/../../..' . '/lib/private/Files/Type/TemplateManager.php',
         'OC\\Files\\Utils\\PathHelper' => __DIR__ . '/../../..' . '/lib/private/Files/Utils/PathHelper.php',
         'OC\\Files\\Utils\\Scanner' => __DIR__ . '/../../..' . '/lib/private/Files/Utils/Scanner.php',
         'OC\\Files\\View' => __DIR__ . '/../../..' . '/lib/private/Files/View.php',
@@ -1921,6 +1918,8 @@ class ComposerStaticInit749170dad3f5e7f9ca158f5a9f04f6a2
         'OC\\Preview\\BackgroundCleanupJob' => __DIR__ . '/../../..' . '/lib/private/Preview/BackgroundCleanupJob.php',
         'OC\\Preview\\Bitmap' => __DIR__ . '/../../..' . '/lib/private/Preview/Bitmap.php',
         'OC\\Preview\\Bundled' => __DIR__ . '/../../..' . '/lib/private/Preview/Bundled.php',
+        'OC\\Preview\\Db\\Preview' => __DIR__ . '/../../..' . '/lib/private/Preview/Db/Preview.php',
+        'OC\\Preview\\Db\\PreviewMapper' => __DIR__ . '/../../..' . '/lib/private/Preview/Db/PreviewMapper.php',
         'OC\\Preview\\EMF' => __DIR__ . '/../../..' . '/lib/private/Preview/EMF.php',
         'OC\\Preview\\Font' => __DIR__ . '/../../..' . '/lib/private/Preview/Font.php',
         'OC\\Preview\\GIF' => __DIR__ . '/../../..' . '/lib/private/Preview/GIF.php',
@@ -1947,13 +1946,16 @@ class ComposerStaticInit749170dad3f5e7f9ca158f5a9f04f6a2
         'OC\\Preview\\PNG' => __DIR__ . '/../../..' . '/lib/private/Preview/PNG.php',
         'OC\\Preview\\Photoshop' => __DIR__ . '/../../..' . '/lib/private/Preview/Photoshop.php',
         'OC\\Preview\\Postscript' => __DIR__ . '/../../..' . '/lib/private/Preview/Postscript.php',
-        'OC\\Preview\\Provider' => __DIR__ . '/../../..' . '/lib/private/Preview/Provider.php',
-        'OC\\Preview\\ProviderV1Adapter' => __DIR__ . '/../../..' . '/lib/private/Preview/ProviderV1Adapter.php',
+        'OC\\Preview\\PreviewService' => __DIR__ . '/../../..' . '/lib/private/Preview/PreviewService.php',
         'OC\\Preview\\ProviderV2' => __DIR__ . '/../../..' . '/lib/private/Preview/ProviderV2.php',
         'OC\\Preview\\SGI' => __DIR__ . '/../../..' . '/lib/private/Preview/SGI.php',
         'OC\\Preview\\SVG' => __DIR__ . '/../../..' . '/lib/private/Preview/SVG.php',
         'OC\\Preview\\StarOffice' => __DIR__ . '/../../..' . '/lib/private/Preview/StarOffice.php',
-        'OC\\Preview\\Storage\\Root' => __DIR__ . '/../../..' . '/lib/private/Preview/Storage/Root.php',
+        'OC\\Preview\\Storage\\IPreviewStorage' => __DIR__ . '/../../..' . '/lib/private/Preview/Storage/IPreviewStorage.php',
+        'OC\\Preview\\Storage\\LocalPreviewStorage' => __DIR__ . '/../../..' . '/lib/private/Preview/Storage/LocalPreviewStorage.php',
+        'OC\\Preview\\Storage\\ObjectStorePreviewStorage' => __DIR__ . '/../../..' . '/lib/private/Preview/Storage/ObjectStorePreviewStorage.php',
+        'OC\\Preview\\Storage\\PreviewFile' => __DIR__ . '/../../..' . '/lib/private/Preview/Storage/PreviewFile.php',
+        'OC\\Preview\\Storage\\StorageFactory' => __DIR__ . '/../../..' . '/lib/private/Preview/Storage/StorageFactory.php',
         'OC\\Preview\\TGA' => __DIR__ . '/../../..' . '/lib/private/Preview/TGA.php',
         'OC\\Preview\\TIFF' => __DIR__ . '/../../..' . '/lib/private/Preview/TIFF.php',
         'OC\\Preview\\TXT' => __DIR__ . '/../../..' . '/lib/private/Preview/TXT.php',
@@ -1991,6 +1993,7 @@ class ComposerStaticInit749170dad3f5e7f9ca158f5a9f04f6a2
         'OC\\Repair\\AddCleanupDeletedUsersBackgroundJob' => __DIR__ . '/../../..' . '/lib/private/Repair/AddCleanupDeletedUsersBackgroundJob.php',
         'OC\\Repair\\AddCleanupUpdaterBackupsJob' => __DIR__ . '/../../..' . '/lib/private/Repair/AddCleanupUpdaterBackupsJob.php',
         'OC\\Repair\\AddMetadataGenerationJob' => __DIR__ . '/../../..' . '/lib/private/Repair/AddMetadataGenerationJob.php',
+        'OC\\Repair\\AddMovePreviewJob' => __DIR__ . '/../../..' . '/lib/private/Repair/AddMovePreviewJob.php',
         'OC\\Repair\\AddRemoveOldTasksBackgroundJob' => __DIR__ . '/../../..' . '/lib/private/Repair/AddRemoveOldTasksBackgroundJob.php',
         'OC\\Repair\\CleanTags' => __DIR__ . '/../../..' . '/lib/private/Repair/CleanTags.php',
         'OC\\Repair\\CleanUpAbandonedApps' => __DIR__ . '/../../..' . '/lib/private/Repair/CleanUpAbandonedApps.php',
@@ -2220,7 +2223,6 @@ class ComposerStaticInit749170dad3f5e7f9ca158f5a9f04f6a2
         'OC_Helper' => __DIR__ . '/../../..' . '/lib/private/legacy/OC_Helper.php',
         'OC_Hook' => __DIR__ . '/../../..' . '/lib/private/legacy/OC_Hook.php',
         'OC_JSON' => __DIR__ . '/../../..' . '/lib/private/legacy/OC_JSON.php',
-        'OC_Response' => __DIR__ . '/../../..' . '/lib/private/legacy/OC_Response.php',
         'OC_Template' => __DIR__ . '/../../..' . '/lib/private/legacy/OC_Template.php',
         'OC_User' => __DIR__ . '/../../..' . '/lib/private/legacy/OC_User.php',
         'OC_Util' => __DIR__ . '/../../..' . '/lib/private/legacy/OC_Util.php',

@@ -49,10 +49,12 @@ OC.L10N.register(
     "Select a filter" : "Vali filter",
     "Select a comparator" : "Vali võrdleja",
     "Remove filter" : "Eemalda filter",
+    "Audio" : "Helifailid",
     "Folder" : "Kaust",
     "Images" : "Pildid",
     "Office documents" : "Kontroritarkvara dokumendid",
     "PDF documents" : "PDF-dokumendid",
+    "Video" : "Video",
     "Custom MIME type" : "Sinu määratud MIME-tüüp",
     "Custom mimetype" : "Sinu määratud MIME-tüüp",
     "Select a file type" : "Vali failitüüp",
@@ -69,7 +71,6 @@ OC.L10N.register(
     "Select a user agent" : "Vali rakenduse tunnus",
     "Select groups" : "Vali grupid",
     "Groups" : "Grupid",
-    "Type to search for group …" : "Grupi otsimiseks kirjuta midagi…",
     "Select a trigger" : "Vali päästik",
     "At least one event must be selected" : "Palun valitud vähemalt üks sündmus",
     "Add new flow" : "Lisa uus töövoog",
@@ -118,6 +119,7 @@ OC.L10N.register(
     "Request user agent" : "Päri rakenduse tunnust",
     "Group membership" : "Grupi liikmelisus",
     "is member of" : "on liige",
-    "is not member of" : "ei ole liige"
+    "is not member of" : "ei ole liige",
+    "Type to search for group …" : "Grupi otsimiseks kirjuta midagi…"
 },
 "nplurals=2; plural=(n != 1);");
