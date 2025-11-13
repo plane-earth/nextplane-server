@@ -23,6 +23,7 @@ use OCP\IBinaryFinder;
 use OCP\IConfig;
 use OCP\IPreview;
 use OCP\Preview\IProviderV2;
+use OCP\Snowflake\IGenerator;
 use Psr\Container\ContainerInterface;
 use Psr\Container\NotFoundExceptionInterface;
 use Psr\Log\LoggerInterface;
@@ -141,6 +142,7 @@ class PreviewManager implements IPreview {
 				$this->container->get(LoggerInterface::class),
 				$this->container->get(PreviewMapper::class),
 				$this->container->get(StorageFactory::class),
+				$this->container->get(IGenerator::class),
 			);
 		}
 		return $this->generator;
@@ -239,32 +241,6 @@ class PreviewManager implements IPreview {
 	/**
 	 * List of enabled default providers
 	 *
-	 * The following providers are enabled by default:
-	 *  - OC\Preview\PNG
-	 *  - OC\Preview\JPEG
-	 *  - OC\Preview\GIF
-	 *  - OC\Preview\BMP
-	 *  - OC\Preview\XBitmap
-	 *  - OC\Preview\MarkDown
-	 *  - OC\Preview\MP3
-	 *  - OC\Preview\TXT
-	 *
-	 * The following providers are disabled by default due to performance or privacy concerns:
-	 *  - OC\Preview\Font
-	 *  - OC\Preview\HEIC
-	 *  - OC\Preview\Illustrator
-	 *  - OC\Preview\Movie
-	 *  - OC\Preview\MSOfficeDoc
-	 *  - OC\Preview\MSOffice2003
-	 *  - OC\Preview\MSOffice2007
-	 *  - OC\Preview\OpenDocument
-	 *  - OC\Preview\PDF
-	 *  - OC\Preview\Photoshop
-	 *  - OC\Preview\Postscript
-	 *  - OC\Preview\StarOffice
-	 *  - OC\Preview\SVG
-	 *  - OC\Preview\TIFF
-	 *
 	 * @return list<class-string<IProviderV2>>
 	 */
 	protected function getEnabledDefaultProvider(): array {
@@ -284,7 +260,6 @@ class PreviewManager implements IPreview {
 
 		$this->defaultProviders = $this->config->getSystemValue('enabledPreviewProviders', array_merge([
 			Preview\MarkDown::class,
-			Preview\MP3::class,
 			Preview\TXT::class,
 			Preview\OpenDocument::class,
 		], $imageProviders));

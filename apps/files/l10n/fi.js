@@ -238,7 +238,6 @@ OC.L10N.register(
     "Failed to convert files: {message}" : "Tiedostojen muuntaminen epäonnistui: {message}",
     "All files failed to be converted" : "Mitään tiedostoista ei voitu muuntaa",
     "One file could not be converted: {message}" : "Yhtä tiedostoa ei voitu muuntaa: {message}",
-    "Files successfully converted" : "Tiedostot muunnettu onnistuneesti",
     "Failed to convert files" : "Tiedostojen muuntaminen epäonnistui",
     "File successfully converted" : "Tiedosto muunnettu onnistuneesti",
     "Failed to convert file: {message}" : "Tiedoston muuntaminen epäonnistui: {message}",
